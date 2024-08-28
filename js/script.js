@@ -1,3 +1,6 @@
+AOS.init({
+  duration: 1200
+})
 let dropBtn = document.querySelector(".dropbtn");
 var dropdown = document.querySelector(".dropdown");
 dropBtn.addEventListener("click", () => {
@@ -21,4 +24,13 @@ close.addEventListener("click", () => {
     setTimeout(() => {
         dream.remove();
     }, 300)
+})
+let backToTop = document.querySelector(".back-to-top");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 400) {
+    backToTop.classList.remove("scrolled");
+  } 
+  else {
+    backToTop.classList.add("scrolled");
+  }
 })
