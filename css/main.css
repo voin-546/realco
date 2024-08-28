@@ -9,10 +9,12 @@
   outline: none;
   font-family: "Roboto", sans-serif;
   -webkit-tap-highlight-color: transparent;
+  color-scheme: dark;
 }
 
 :root {
   --font-family: "Roboto", sans-serif;
+  color-scheme: dark;
 }
 
 .dream {
@@ -121,6 +123,12 @@ header {
   z-index: 3;
   transition: top 0.3s;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #222;
+  }
 }
 header.show .burger .line {
   margin-left: 13px;
