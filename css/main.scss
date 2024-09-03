@@ -265,6 +265,7 @@ main {
         top: 45%;
         transform: translate(-50%, -50%);
         z-index: 1;
+        @media (max-width: 400px) { top: 50%; }
         div { 
             width: min(560px, 100%);
             @media (max-width: 1190px) { width: min(440px, 100%); }
@@ -272,6 +273,7 @@ main {
                 font: 400 56px/67.2px var(--font-family);
                 color: #2A2C1F;
                 margin-block: 20px 15px;
+                @media (max-width: 380px) { font-size: 46px; line-height: 55px; }
             }
             p {
                 font: 400 18px/30px var(--font-family);
@@ -831,7 +833,7 @@ footer {
                 gap: 16px;
                 margin-block: 15px 16px;
                 @media (max-width: 905px) { justify-content: center; gap: 8px; }
-                @media (max-width: 354px) { flex-wrap: wrap; }
+                @media (max-width: 400px) { flex-wrap: wrap; }
                 input, input::placeholder {
                     color: #65665C;
                     font: 400 16px/24px var(--font-family);
@@ -845,7 +847,7 @@ footer {
                     height: 48px;
                 }
                 input, button {
-                    @media (max-width: 354px) {
+                    @media (max-width: 400px) {
                         width: 100%;
                     }
                 }
